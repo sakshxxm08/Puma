@@ -5,202 +5,265 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="icon" href="https://www.transparentpng.com/thumb/puma-logo/It9NZf-puma-logo-transparent.png">
+  <title>PUMA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gradient-to-b from-zinc-800 to-black">
-  <header class="bg-zinc-800 text-white body-font">
+<body class="w-full cursor-default Baloo_Da_2">
+  <!-- .............................   -->
+  <!--  navbar  -->
+  <!--  ............................  -->
+  <header class="text-gray-600 fixed bg-white w-full top-0 z-50">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <img class="w-25 h-20" src="https://o.remove.bg/downloads/c9e1760c-51f4-4c4b-967f-90d69294aa5e/images-removebg-preview.png" alt="...">
+        <img class="w-20" src="https://www.transparentpng.com/thumb/puma-logo/VMgL83-puma-logo-clipart-transparent.png" alt="puma logo clipart transparent @transparentpng.com">
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-gray-300 cursor-pointer font-bold">HOME</a>
-        <a class="mr-5 hover:text-gray-300 cursor-pointer font-bold border-b-4 border-yellow-700">PRODUCT</a>
-        <a class="mr-5 hover:text-gray-300 cursor-pointer font-bold">TRANDS</a>
-        <a class="mr-5 hover:text-gray-300 cursor-pointer font-bold">WISH LIST</a>
+        <a href="#top" class="mr-5 text-gray-800 hover:text-gray-400 font-semibold cursor-pointer active:animate-ping">HOME</a>
+        <a href="#products" class="mr-5 text-gray-800 hover:text-gray-400 font-semibold cursor-pointer active:animate-ping">COLLECTION</a>
+        <a href="#offers" class="mr-5 text-gray-800 hover:text-gray-400 font-semibold cursor-pointer active:animate-ping">OFFERS</a>
+        <a href="./wish_list.html"class="mr-5 text-gray-800 hover:text-gray-400 font-semibold cursor-pointer active:animate-ping">WISH LIST</a>
       </nav>
+      <button
+  id="theme-toggle"
+  type="button"
+  class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+>
+  <svg
+    id="theme-toggle-dark-icon"
+    class="w-5 h-5 hidden"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+    ></path>
+  </svg>
+  <svg
+    id="theme-toggle-light-icon"
+    class="w-5 h-5 hidden"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+    ></path>
+  </svg>
+</button>
     </div>
   </header>
-  <section class="text-gray-600 body-font overflow-hidden">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-[82px]" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1500,h_1500/global/386438/01/sv01/fnd/IND/fmt/png/Rebound-Layup-Wide-Sneakers">
-        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-          <h2 class="text-sm title-font text-gray-500 tracking-widest">PUMA</h2>
-          <h1 class="text-white text-3xl title-font font-medium mb-1">Rebound Layup Wide Sneakers</h1>
-          <div class="flex mb-4">
-            <span class="flex items-center">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-700" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-700" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-700" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-700" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-yellow-700" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-              <span class="text-gray-400 ml-3">4 Reviews</span>
-            </span>
-            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
-              <a class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
-          <p class="leading-relaxed text-gray-400">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
-          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-            <div class="flex">
-              <span class="mr-3 text-white">Color</span>
-              <button class="border-2 border-gray-300 rounded-full w-6 h-6 focus:outline-none"></button>
-              <button class="border-2 border-gray-300 ml-1 bg-gray-700 rounded-full w-6 h-6 focus:outline-none"></button>
-              <button class="border-2 border-gray-300 ml-1 bg-red-500 rounded-full w-6 h-6 focus:outline-none"></button>
-            </div>
-            <div class="flex ml-6 items-center">
-              <span class="mr-3 text-white">Size</span>
-              <div class="relative">
-                <select class="bg-zinc-800 text-white rounded border appearance-none py-2 focus:outline-none text-base pl-3 pr-10">
-                  <option>SM</option>
-                  <option>M</option>
-                  <option>L</option>
-                  <option>XL</option>
-                </select>
-                <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <span class="title-font font-medium text-2xl text-white">$58.00</span>
-            <button class="flex ml-auto text-white bg-yellow-800 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-700 rounded">ADD TO CART</button>
-            <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 active:text-red-500 ml-4">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
-              </svg>
-            </button>
-          </div>
+  <!-- .............................   -->
+  <!--  Hero section  -->
+  <!--  ............................  -->
+  <section class="text-gray-600 body-font" id="top">
+    <div class="container mx-auto flex px-12 py-6 md:flex-row flex-col items-center md:pt-24 sm:pt-28 pt-40">
+      <div class="block md:hidden lg:max-w-lg lg:w-full lg:p-4 md:w-1/2 w-5/6">
+        <img class="object-cover object-center" alt="hero" src="https://images-static.nykaa.com/media/catalog/product/d/b/db6f0a833993401_n1_.jpg?tr=w-500,pr-true">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="text-4xl lg:text-5xl md:text-4xl sm:text-5xl italic mb-4 arial font-extrabold text-gray-800">PUMA BMW
+        </h1>
+        <p class="mb-8 text-sm">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+        <div class="flex justify-center">
+          <a href="#products"><button class="inline-flex text-white font-semibold bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 rounded-full text-lg active:animate-ping">More Products</button></a>
+        </div>
+      </div>
+      <div class="hidden md:block lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center" alt="hero" src="https://images-static.nykaa.com/media/catalog/product/d/b/db6f0a833993401_n1_.jpg?tr=w-500,pr-true">
+      </div>
+    </div>
+  </section>
+  <hr class="text-gray-900">
+  <section class="text-gray-600 bg-gray-100 body-font">
+    <div class="container px-5 py-6 mx-auto">
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4.5</h2>
+          <p class="leading-relaxed">Ratting</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">41.8K</h2>
+          <p class="leading-relaxed">customer</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">35K</h2>
+          <p class="leading-relaxed">Diliverd</p>
+        </div>
+        <div class="p-4 sm:w-1/4 w-1/2">
+          <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">40K</h2>
+          <p class="leading-relaxed">Products</p>
         </div>
       </div>
     </div>
   </section>
-  <!--   <section class="text-gray-600 body-font">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-6xl text-6xl mb-4 font-bold text-white italic">Rebound
-        </h1>
-        <h2 class="title-font sm:text-2xl text-2xl mb-4 font-bold text-white italic">PUMA AIR MAX 90</h2>
-        <h2 class="title-font sm:text-2xl text-2xl mb-4 font-bold text-white italic">$ 98</h2>
-        <p class="mb-8 leading-relaxed text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
-        <label for="name" class="text-white">Size</label>
-        <div class="flex pb-8">
-          <a href="#" class="items-center hidden px-4 py-2 mx-1 text-white transition-colors duration-300 transform bg-zinc-900 rounded-md sm:flex hover:bg-zinc-800">
-            6
-          </a>
+  <hr class="text-gray-900">
+  <!-- .............................   -->
+  <!--  offers section  -->
+  <!--  ............................  -->
 
-          <a href="#" class="items-center hidden px-4 py-2 mx-1 text-white transition-colors duration-300 transform bg-zinc-900 rounded-md sm:flex hover:bg-zinc-800">
-            7
-          </a>
-
-          <a href="#" class="items-center hidden px-4 py-2 mx-1 text-white transition-colors duration-300 transform bg-zinc-900 rounded-md sm:flex hover:bg-zinc-800">
-            8
-          </a>
-
-          <a href="#" class="items-center hidden px-4 py-2 mx-1 text-white transition-colors duration-300 transform bg-zinc-900 rounded-md sm:flex hover:bg-zinc-800">
-            10
-          </a>
-        </div>
-        <div class="flex justify-center">
-          <button class="inline-flex text-white bg-zinc-800 border-0 py-2 px-6 focus:outline-none hover:bg-zinc-600 rounded-full text-lg transition-colors duration-300 transform">ADD TO CART</button>
+  <section class="text-gray-600 body-font" id="offers">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-800">OUR LETEST OFFERS</h1>
+          <div class="h-1 w-24 bg-gray-500 rounded"></div>
         </div>
       </div>
-      <div class="bg-zinc-700 shadow-[inset_10px_15px_10px_-15px_white,inset_-10px_-15px_10px_-15px_white,inset_10px_15px_10px_-15px_black,inset_-10px_-15px_10px_-15px_black]  rounded-full lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class=" object-cover object-center rounded -rotate-12 " alt="hero" src="https://o.remove.bg/downloads/305dac18-2118-4fc2-8f43-311b596548a5/Rebound-Layup-Wide-Sneakers-removebg-preview.png">
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 w-full p-4">
+           <a href="./offers.html">
+            <div class="bg-gray-100 p-6 rounded-lg md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.freepik.com/premium-psd/sport-shoes-sale-social-media-post-facebook-banner-web-banner-template_70055-842.jpg?w=2000" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">OFFERS</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                <p class="leading-relaxed text-base">Offer valid for olnly 2 hours.</p>
+              </div>
+           </a>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 w-full p-4">
+          <a href="./offers.html">
+            <div class="bg-gray-100 p-6 rounded-lg md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.freepik.com/premium-psd/sport-shoes-sale-social-media-post-facebook-banner-web-banner-template_70055-844.jpg?w=2000" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">OFFERS</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+            <p class="leading-relaxed text-base">Offer valid for olnly 2 hours.</p>
+          </div>
+          </a>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 w-full p-4">
+          <a href="./offers.html">
+            <div class="bg-gray-100 p-6 rounded-lg md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.freepik.com/premium-psd/sport-shoes-sale-social-media-post-facebook-banner-web-banner-template_70055-841.jpg?w=2000" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">OFFERS</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+            <p class="leading-relaxed text-base">Offer valid for olnly 2 hours.</p>
+          </div>
+          </a>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 w-full p-4">
+          <a href="./offers.html">
+            <div class="bg-gray-100 p-6 rounded-lg md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.freepik.com/premium-psd/banner-sport-shoes-sale-social-media-post-facebook-web-banner-template_70055-861.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">OFFERS</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+            <p class="leading-relaxed text-base">Offer valid for olnly 2 hours.</p>
+          </div>
+          </a>
+        </div>
       </div>
     </div>
-  </section> -->
+  </section>
+
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Rebound Layup Wide Sneakers</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-white">Or 3 interest free payments of ₹1,399.67 with
-
-          (Prices include GST)</p>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Products Category</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
       </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1500,h_1500/global/386438/01/fnd/IND/fmt/png/Rebound-Layup-Wide-Sneakers">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+      <div class="flex flex-wrap -m-2">
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full border-2 mr-4" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/374765/19/sv01/fnd/IND/fmt/png/PUMA-Rebound-JOY-SoftFoam+-Shoes">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
+              <p class="text-gray-500">UI Designer</p>
             </div>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1500,h_1500/global/386438/01/bv/fnd/IND/fmt/png/Rebound-Layup-Wide-Sneakers">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full border-2 mr-4" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/373108/28/sv01/fnd/IND/fmt/png/X-Ray-2-Square-IMEVA-SoftFoam+-Shoes">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Henry Letham</h2>
+              <p class="text-gray-500">CTO</p>
             </div>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1500,h_1500/global/386438/01/sv02/fnd/IND/fmt/png/Rebound-Layup-Wide-Sneakers">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Rebound Layup Wide Sneakers</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full border-2 mr-4" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/370522/06/sv01/fnd/IND/fmt/png/RS-X-Winterised-Shoes">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Oskar Blinde</h2>
+              <p class="text-gray-500">Founder</p>
             </div>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1500,h_1500/global/386438/01/sv04/fnd/IND/fmt/png/Rebound-Layup-Wide-Sneakers">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full border-2 mr-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMCWyjnURnkQYzC7LhYGjymfKifhGYGMHDQ&usqp=CAU">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">John Doe</h2>
+              <p class="text-gray-500">DevOps</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full border-2 mr-4" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/307018/01/sv01/fnd/IND/fmt/png/BMW-Motorsport-Neo-Cat-Unisex-Shoes">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Martin Eden</h2>
+              <p class="text-gray-500">Software Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full border-2 mr-4" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/106713/01/sv01/fnd/IND/fmt/png/PUMA-22-FH-Rubber-Men's-Cricket-Shoes">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Boris Kitua</h2>
+              <p class="text-gray-500">UX Researcher</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover object-center flex-shrink-0 rounded-full border-2 mr-4" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/192259/06/sv01/fnd/IND/fmt/png/HYBRID-NX-Men's-Running-Shoes">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Atticus Finch</h2>
+              <p class="text-gray-500">QA Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover border-2 object-center flex-shrink-0 rounded-full mr-4" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/106789/01/sv01/fnd/IND/fmt/png/PUMA-22-FH-Rubber-Men's-Cricket-Shoes">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Alper Kamu</h2>
+              <p class="text-gray-500">System</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center hover:border-gray-200 hover:border p-4 rounded-lg md:hover:shadow-lg shadow-inner shadow-gray-500/50 md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+            <img alt="team" class="w-16 h-16 object-cover border-2 object-center flex-shrink-0 rounded-full mr-4" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/382244/02/sv01/fnd/IND/fmt/png/RS-Fast-Mix-Gold--Unisex-Shoes">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Rodrigo Monchi</h2>
+              <p class="text-gray-500">Product Manager</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!--  more products  -->
-  <section class="text-gray-600 body-font">
+
+  <section class="text-gray-600 body-font" id="products">
     <div class="container px-5 py-24 mx-auto">
       <div class="container px-6 py-10 mx-auto">
         <h1 class="text-3xl font-semibold text-gray-400 capitalize lg:text-4xl dark:text-white">CUSTOMERS ALSO BOUGHT</h1>
       </div>
       <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+          <a href="./product.html" class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/385043/06/sv01/fnd/IND/fmt/png/RS-Fast-Limiter-Unisex-Sneakers">
           </a>
           <div class="mt-4">
@@ -209,8 +272,8 @@
             <p class="mt-1">$16.00</p>
           </div>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+          <a href="./product.html" class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/369573/29/sv01/fnd/IND/fmt/png/PUMA-Rebound-Lay-Up-SoftFoam+-Unisex-Sneakers">
           </a>
           <div class="mt-4">
@@ -219,8 +282,8 @@
             <p class="mt-1">$21.15</p>
           </div>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+          <a href="./product.html" class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/374411/01/sv01/fnd/IND/fmt/png/PUMA-Backcourt-Mid-Youth-Sneakers">
           </a>
           <div class="mt-4">
@@ -229,8 +292,8 @@
             <p class="mt-1">$12.00</p>
           </div>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+          <a  href="./product.html" class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/380748/03/sv01/fnd/IND/fmt/png/PUMA-Shuffle-Mid-Sneakers">
           </a>
           <div class="mt-4">
@@ -239,8 +302,8 @@
             <p class="mt-1">$18.40</p>
           </div>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+          <a href="./product.html" class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386545/03/sv01/fnd/IND/fmt/png/Slipstream-Mid-Heritage-Men's-Sneakers">
           </a>
           <div class="mt-4">
@@ -249,8 +312,8 @@
             <p class="mt-1">$16.00</p>
           </div>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+          <a href="./product.html" class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/383203/09/sv01/fnd/IND/fmt/png/X-Ray-2-Square-SD-Unisex-Shoes">
           </a>
           <div class="mt-4">
@@ -259,8 +322,8 @@
             <p class="mt-1">$21.15</p>
           </div>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+          <a href="./product.html" class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/373108/28/sv01/fnd/IND/fmt/png/X-Ray-2-Square-IMEVA-SoftFoam+-Shoes">
           </a>
           <div class="mt-4">
@@ -269,8 +332,8 @@
             <p class="mt-1">$12.00</p>
           </div>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full md:hover:shadow-lg md:hover:shadow-gray-800/50 cursor-pointer active:cursor-progress">
+          <a href="./product.html" class="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/306196/01/sv01/fnd/IND/fmt/png/BMW-M-Motorsport-Kart-Cat-III-Mid-Men's-Shoes">
           </a>
           <div class="mt-4">
@@ -282,6 +345,45 @@
       </div>
     </div>
   </section>
+
+  <!-- .............................   -->
+  <!--  Footer  -->
+  <!--  ............................  -->
+
+  <footer class="bg-gray-300 text-gray-900 font-semibold body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img class="w-20" src="https://www.transparentpng.com/thumb/puma-logo/VMgL83-puma-logo-clipart-transparent.png" alt="puma logo clipart transparent @transparentpng.com">
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 puma —
+        <a href="https://www.mycslab.in/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@mycslab.in</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
 </body>
 
 </html>
